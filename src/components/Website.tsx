@@ -5,7 +5,7 @@ const ITReimagineBanner: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const texts = ['Digital Transformation.', 'AI-Powered Solutions.', 'Intelligent Automation.', 'Custom Development.', 'Strategic Implementation.'];
+    const texts = ['Digital Transformation', 'AI-Powered Solutions', 'Intelligent Automation', 'Custom Development', 'Strategic Implementation'];
 
     useEffect(() => {
         const typeSpeed = isDeleting ? 40 : 100;
@@ -165,6 +165,18 @@ const ITReimagineBanner: React.FC = () => {
           font-weight: 400;
           line-height: 1.6;
           font-family: "Inter", sans-serif;
+          letter-spacing: 0.01em;
+        }
+
+        .left-part h2 {
+          width: 90%;
+          margin: 20px 0 0;
+          color: #ffffff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.6;
+          font-family: "Space Grotesk", sans-serif;
           letter-spacing: 0.01em;
         }
 
@@ -1321,13 +1333,21 @@ const ITReimagineBanner: React.FC = () => {
                                 </span>
                                 <span className="text">{currentText}</span>
                             </h1>
-                            <p>Transforming businesses through innovative technology solutions, AI-powered automation, and strategic digital implementation. We partner with forward-thinking companies to reimagine their digital future.</p>
-                            <a href="mailto:contact@itreimagine.com?subject=Free Consultation Request" className="book-link">
-                                <span className="linktext">Book Your Free Consultation</span>
-                                <span className="arrow">
-                                    <span></span>
-                                </span>
-                            </a>
+                            <h2>Transforming businesses through innovative technology solutions, AI-powered automation, and strategic digital implementation. We partner with forward-thinking companies to reimagine their digital future.</h2>
+                            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                                <a href="https://calendly.com/ritepulse/it-reimagine-free-consultation" className="book-link" target="_blank" rel="noopener noreferrer">
+                                    <span className="linktext">Book Your Free Consultation</span>
+                                    <span className="arrow">
+                                        <span></span>
+                                    </span>
+                                </a>
+                                <a href="#contact" className="book-link" style={{ background: 'transparent', border: '2px solid rgba(255,255,255,0.3)' }}>
+                                    <span className="linktext">Contact Us</span>
+                                    <span className="arrow">
+                                        <span></span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                         <div className="right-part">
                             <div className="main-grid d-flex">
@@ -1344,15 +1364,13 @@ const ITReimagineBanner: React.FC = () => {
                                 </div>
                                 <div className="box">
                                     <div className="bg-img">
-                                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=200&h=200&fit=crop&crop=center" alt="Software Development" />
+                                        <img src="/src/images/artificial_intelligence.jpg" alt="Machine Learning" />
                                     </div>
                                 </div>
-                                <div className="box">
-                                    <span>Custom Development</span>
-                                </div>
+
                                 <div className="box">
                                     <div className="bg-img">
-                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&crop=center" alt="Data Analytics" />
+                                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=200&h=200&fit=crop&crop=center" alt="Software Development" />
                                     </div>
                                 </div>
                                 <div className="box">
@@ -1360,8 +1378,11 @@ const ITReimagineBanner: React.FC = () => {
                                 </div>
                                 <div className="box">
                                     <div className="bg-img">
-                                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=200&h=200&fit=crop&crop=center" alt="Machine Learning" />
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&crop=center" alt="Data Analytics" />
                                     </div>
+                                </div>
+                                <div className="box">
+                                    <span>Custom Development</span>
                                 </div>
                             </div>
                         </div>
@@ -1469,10 +1490,10 @@ const ITReimagineBanner: React.FC = () => {
                                 Your digital transformation journey starts with a conversation.
                             </p>
                             <div className="cta-buttons">
-                                <a href="mailto:contact@itreimagine.com?subject=Free Consultation Request&body=Hi, I'm interested in learning more about your services and would like to schedule a free consultation." className="cta-button">
+                                <a href="https://calendly.com/ritepulse/it-reimagine-free-consultation" className="cta-button" target="_blank" rel="noopener noreferrer">
                                     Book Free Consultation
                                 </a>
-                                <a href="mailto:info@itreimagine.com?subject=Service Inquiry" className="cta-button secondary">
+                                <a href="#contact" className="cta-button secondary">
                                     Contact Us
                                 </a>
                             </div>
